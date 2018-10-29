@@ -1,0 +1,47 @@
+[
+    {
+      "_id": "5bd2e14f3f8fb5584476b49f",
+      "age": 33,
+      "name": "Erin Watkins",
+      "gender": "female",
+      "company": "BRISTO",
+      "email": "erinwatkins@bristo.com",
+      "phone": "+91 (985) 562-3372"
+    },
+    {
+      "_id": "5bd2e14f0d9c4ffd0ef0a330",
+      "age": 27,
+      "name": "Walter Mcgowan",
+      "gender": "male",
+      "company": "BUGSALL",
+      "email": "waltermcgowan@bugsall.com",
+      "phone": "+91 (919) 568-3442"
+    },
+    {
+      "_id": "5bd2e14f63e9c725e8cf8a6a",
+      "age": 34,
+      "name": "Helga Horne",
+      "gender": "female",
+      "company": "RETROTEX",
+      "email": "helgahorne@retrotex.com",
+      "phone": "+91 (829) 435-2691"
+    },
+    {
+      "_id": "5bd2e14fc02b8d0ae53d6da2",
+      "age": 28,
+      "name": "Lloyd Martin",
+      "gender": "male",
+      "company": "SLUMBERIA",
+      "email": "lloydmartin@slumberia.com",
+      "phone": "+91 (809) 531-2777"
+    },
+    {
+      "_id": "5bd2e14ff6557bf734446378",
+      "age": 35,
+      "name": "Finley Ray",
+      "gender": "male",
+      "company": "AVIT",
+      "email": "finleyray@avit.com",
+      "phone": "+91 (892) 445-3933"
+    }
+  ]

@@ -1,0 +1,33 @@
+<div class="container">
+<!-- Modal HTML -->
+	<div class="modal-dialog modal-login">
+		<div class="modal-content">
+			<div class="modal-header">
+                <div class="avatar"><i class="material-icons">&#xE7FD;</i></div>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="false">&times;</button>
+			</div>
+			<div class="modal-body">
+				<form ng-submit="login.login()">
+					<div class="form-group">
+						<input type="text" ng-model="login.userName" class="form-control" placeholder="Username" required="required">
+					</div>
+					<div class="form-group">
+						<input type="password" ng-model="login.pwd" class="form-control" placeholder="Password" required="required">
+					</div>
+					<div class="form-group">
+						<input type="submit" class="btn btn-primary btn-block btn-lg" value="Login">
+					</div>
+				</form>				
+                <div class="hint-text small"><a href="#">Forgot Your Password?</a></div>
+                <div class="errorMsg">{{errorMsg}}
+                </div>
+			</div>
+        </div>
+</div>     
+<link rel="text/css" href="app/styles/login.css" >
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</div>
