@@ -1,6 +1,20 @@
 
 <my-Dir ></my-Dir>
-<h1>Home Page Works</h1>
+<!-- <script>
+        $(document).ready(function(){
+          $("#myInput").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function() {
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+          });
+        });
+        </script> -->
+        <h1>Home Page Works</h1>
+<p>Type something in the input field to search the table for names</p>  
+<input class="form-control" ng-model="myInput" ng-keyup="home.search()" type="text" placeholder="Search..">
+<br>
+
 <table class="table table-hover">
     <tr>
 <th>Id</th>
@@ -9,7 +23,8 @@
 <th>Email</th>
 <th>phone</th>
 </tr>
-<tr ng-repeat='x in myData'>
+<tbody id="myTable">
+<tr ng-repeat='x in newData'>
     <td>{{x._id}}</td>
 <td>{{x.name}}</td>
 <td>{{x.age}}</td>
@@ -17,8 +32,5 @@
 <td>{{x.phone}}</td>
 </tr>
 
-
+</tbody>
 </table>
-
-
-
