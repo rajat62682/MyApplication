@@ -9,8 +9,8 @@
     /** @ngInject */
     function LoginController($scope,$location) {
       var _this = this;
-      const user="rajat";
-      const pwd="test";
+      var user="rajat";
+      var  pwd="test";
        var nav=document.getElementById("#navBar");
 
       $scope.errorMsg="";

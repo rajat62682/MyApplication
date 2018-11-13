@@ -18,8 +18,56 @@
 
     this.search = function () {
       $scope.newData = angular.copy($scope.myData.filter(checkValue));
+ 
+     }
+ 
+     $scope.column='name';
+     $scope.reverse=false;
 
-    }
+     this.sortColumn =function(col)
+     {
+       $scope.column=col;
+       if($scope.reverse)
+       $scope.reverse=false;
+       else
+       $scope.reverse=true;
+
+     }
+     this.sortClass=function(col)
+     {
+        if($scope.column==col)
+        {
+          if($scope.reverse)
+          {
+            return 'arrow-down';
+          }
+          else
+          return 'arrow-up';
+
+        }
+        else
+        return ' ';
+
+
+     }
+
+ 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     function checkValue(item) {
 
       if (item.name.toLowerCase().includes($scope.myInput.toLowerCase())) {
@@ -32,7 +80,6 @@
       }
 
       return false;
-
     }
   }
 

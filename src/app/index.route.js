@@ -1,4 +1,4 @@
-(function() {
+(function () {
   'use strict';
 
   angular
@@ -14,33 +14,33 @@
       })
       .otherwise({
         redirectTo: '/'
-      }).when('/home',{
-        
+      }).when('/home', {
+
         resolve: {
           "check": function ($location) {
-                        if (!localStorage.getItem('valid')) {
-                  $location.path('/');
-              }
+            if (!localStorage.getItem('valid')) {
+              $location.path('/');
+            }
           }
-      },
+        },
 
-                 templateUrl:'app/views/home.html',
-                 controller:'HomeController',
-                 controllerAs:'home'
+        templateUrl: 'app/views/home.html',
+        controller: 'HomeController',
+        controllerAs: 'home'
 
-      }).when('/another',{
-        
+      }).when('/another', {
+
         resolve: {
           "check": function ($location) {
-                        if (!localStorage.getItem('valid')) {
-                  $location.path('/');
-              }
+            if (!localStorage.getItem('valid')) {
+              $location.path('/');
+            }
           }
-      },
+        },
 
-                 templateUrl:'app/views/another.html',
-                 controller:'',
-                 controllerAs:''
+        templateUrl: 'app/views/chart.html',
+        controller: 'ChartDemoController',
+        controllerAs: 'chart'
 
       });
   }

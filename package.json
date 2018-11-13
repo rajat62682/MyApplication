@@ -1,7 +1,9 @@
 {
   "name": "myApplication",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "highcharts": "^6.2.0"
+  },
   "scripts": {
     "test": "gulp test"
   },

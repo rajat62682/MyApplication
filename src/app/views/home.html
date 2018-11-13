@@ -1,30 +1,21 @@
 
 <my-Dir ></my-Dir>
-<!-- <script>
-        $(document).ready(function(){
-          $("#myInput").on("keyup", function() {
-            var value = $(this).val().toLowerCase();
-            $("#myTable tr").filter(function() {
-              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-            });
-          });
-        });
-        </script> -->
+
         <h1>Home Page Works</h1>
-<p>Type something in the input field to search the table for names</p>  
+<p>Type something in the input field to search the table for names, age, email</p>  
 <input class="form-control" ng-model="myInput" ng-keyup="home.search()" type="text" placeholder="Search..">
 <br>
 
 <table class="table table-hover">
     <tr>
-<th>Id</th>
-<th>Name</th>
-<th>Age</th>
-<th>Email</th>
-<th>phone</th>
+<th  ng-click="home.sortColumn('id')"  ng-class="home.sortClass('id')">Id</th>
+<th  ng-click="home.sortColumn('name')"  ng-class="home.sortClass('name')">Name</th>
+<th ng-click="home.sortColumn('age')"   ng-class="home.sortClass('age')">Age</th>
+<th ng-click="home.sortColumn('email')"   ng-class="home.sortClass('email')">Email</th>
+<th ng-click="home.sortColumn('phone')"   ng-class="home.sortClass('phone')">phone</th>
 </tr>
 <tbody id="myTable">
-<tr ng-repeat='x in newData'>
+<tr ng-repeat='x in newData |orderBy: column:reverse'>
     <td>{{x._id}}</td>
 <td>{{x.name}}</td>
 <td>{{x.age}}</td>
