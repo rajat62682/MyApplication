@@ -1,5 +1,19 @@
 <my-Dir></my-Dir>
 
 <h2>Another Page</h2>
+Choose Your Chart:  
+<select ng-model="chart.myVar">
+  <option ng-repeat="x in chartArr" value='{{x}}' > {{x}}</option>
+</select>  
+<div ng-switch="chart.myVar">
+    <div ng-switch-when="Solar Growth">
+  <solar-Chart></solar-Chart>
+</div>
+<div ng-switch-when="Chart 2">
+       <second-chart></second-chart>
+  </div>
+  <div ng-switch-when="Chart 3">
+    <third-chart></third-chart>
+  </div>
+</div>
 
-<div id="container"></div>

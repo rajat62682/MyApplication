@@ -1,8 +1,23 @@
 
   
-  angular.module('myApplication').controller('ChartDemoController',function()
+  angular.module('myApplication').controller('ChartDemoController',function($scope)
   {
-      function callChart(){Highcharts.chart('container', {
+
+
+    var _this=this;
+
+   _this.drawChart =function()
+   {
+       alert(_this.myVar);
+       if(_this.myVar==="Solar Growth")
+       callChart();
+   }
+
+
+
+      function callChart(){
+        alert("Called");  
+        Highcharts.chart('container', {
     
         title: {
             text: 'Solar Employment Growth by Sector, 2010-2016'
@@ -66,9 +81,17 @@
     
     });}
 
-    callChart();
- 
+    //callChart();
+ $scope.drawChart=function(){
+
+ }
     
+   $scope.chartArr=[
+    "Solar Growth",
+  "Chart 2",
+   "Chart 3"
+]
+
     
       
   });
